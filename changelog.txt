@@ -1,0 +1,44 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+  Info:
+    - Updated for Factorio v1.1
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+  Features:
+    - NGE tracks evolution factor changes statistics from the different sources from now on.
+    - New command /ngevolution works like /evolution but shows how much each factor (vanilla and NGE)
+      has contributed to the total evolution.
+      The accuracy of the values reported haven't been tested yet, but the statistics collection
+      exists now at least so I wanted to get that out now.
+      Thanks to kaldskryke and Solinya for [requesting](https://mods.factorio.com/mod/NextGenEvolution/discussion/5e8a3d4103ee8c000c72e41d)
+      this feature!
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+  Info:
+    - Updated for Factorio v0.18
+---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+  Changes:
+    - The mod now only runs once/minute instead of per second. It was running every second for debug
+      purposes but it isn't really necessary if you aren't checking your evolution every second so
+      it was changed. Now it should actually be 0 performance impact now that the debugging stuff is gone.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+  Changes:
+    - The presets now start with the vanilla pollution evolution factor 0 instead of 9 (or instead of 12 for death worlds).
+---------------------------------------------------------------------------------------------------
+Version: 0.0.2
+  Bugfixes:
+    - Now should support evolution factor when there are multiple forces killing the natives.
+  Changes:
+    - Uses the API that was fixed in [0.17.39] https://forums.factorio.com/viewtopic.php?f=11&t=70801
+    - Code cleanup and refactoring.
+    - New default values for the different evolution sources.
+      Should be somewhat comparable in balance as default settings in vanilla if you set evolution
+      due to pollution produced (vanilla map gen settings > enemy > evolution) in map gen settings.
+      So it is suggested you turn that to 0 and rely on this mod to evolve them from pollution. But you
+      can use both if you want of course.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+  Major Features:
+    - Initial release
